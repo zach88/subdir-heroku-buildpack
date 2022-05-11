@@ -29,9 +29,9 @@ if [ -f $ENV_DIR/PROJECT_PATH ]; then
         echo "       show dir $BUILD_DIR"
         ls -la $BUILD_DIR
 	echo "       show dir $BUILD_DIR parent"
-	ls -la ../$BUILD_DIR
+	ls -la ..$BUILD_DIR
         echo "       show dir $ENV_DIR"
-        la -la $ENV_DIR
+        ls -la $ENV_DIR
 		exit 0
 	fi
 fi
