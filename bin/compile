@@ -24,8 +24,12 @@ if [ -f $ENV_DIR/PROJECT_PATH ]; then
 		cp -R $TMP_DIR/. $BUILD_DIR/
 		echo "       cleaning tmp dir $TMP_DIR"
 		rm -rf $TMP_DIR
-        	echo "       cleaning node_modules in build dir $BUILD_DIR"
-        	rm -rf $BUILD_DIR/node_modules/.
+        echo "       cleaning node_modules in build dir $BUILD_DIR"
+        rm -rf $BUILD_DIR/node_modules/.
+        echo "       show dir $BUILD_DIR"
+        $BUILD_DIR ls -la
+        echo "       show dir $ENV_DIR"
+        $ENV_DIR la -la
 		exit 0
 	fi
 fi
