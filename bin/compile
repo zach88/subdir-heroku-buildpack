@@ -28,8 +28,8 @@ if [ -f $ENV_DIR/PROJECT_PATH ]; then
         rm -rf $BUILD_DIR/node_modules/.
         echo "       show dir $BUILD_DIR"
         ls -la $BUILD_DIR
-	echo "       show dir $BUILD_DIR parent"
-	ls -la ..$BUILD_DIR
+	echo "       show dir tmp"
+	ls -la /tmp
         echo "       show dir $ENV_DIR"
         ls -la $ENV_DIR
 		exit 0
